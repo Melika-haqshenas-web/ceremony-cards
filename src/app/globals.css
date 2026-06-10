@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   Meli — "Midnight Atelier"
+   Cinematic, editorial luxury. Dark ink-plum, rose-gold accent,
+   hairline rules, oversized ultra-thin type.
+   ============================================================ */
+
+:root {
+  --bg: #0c0b12;
+  --bg-soft: #13111c;
+  --fg: #f3efe8;
+  --fg-dim: rgba(243, 239, 232, 0.52);
+  --accent: #e7b2a5;
+  --accent-2: #c8a86a;
+  --line: rgba(243, 239, 232, 0.14);
+  --line-strong: rgba(243, 239, 232, 0.28);
+}
+
+@layer base {
+  html {
+    /* Lenis drives smooth scrolling; disable native smooth to avoid conflict. */
+    scroll-behavior: auto;
+  }
+
+  /* Lenis recommended styles */
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  body {
+    @apply bg-ink-900 font-sans text-bone antialiased;
+    background-color: var(--bg);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display font-light;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+  }
+
+  /* Tidier paragraph wrapping — avoids orphans/awkward line breaks. */
+  p {
+    text-wrap: pretty;
+  }
+
+  /* Persian body text reads better with a more generous line-height. */
+  html[dir='rtl'] p {
+    line-height: 1.9;
+  }
+
+  html[dir='rtl'] body {
+    @apply font-persian;
+  }
+  /* Persian headings: Vazirmatn at a heavier weight, tight tracking. */
+  html[dir='rtl'] h1,
+  html[dir='rtl'] h2,
+  html[dir='rtl'] h3,
+  html[dir='rtl'] h4 {
+    font-family: var(--font-persian), system-ui, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0;
+  }
+
+  ::selection {
+    background: var(--accent);
+    color: var(--bg);
+  }
+
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+}
+
+@layer components {
+  /* ---- Editorial kicker (tiny tracked label) ---- */
+  .kicker {
+    @apply inline-flex items-center gap-3 font-sans text-[11px] font-medium uppercase tracking-kicker text-rose-300;
+  }
+  .kicker::before {
+    content: '';
+    @apply h-px w-8 bg-rose-300/60;
+  }
+
+  /* ---- Hairline rule ---- */
+  .hairline {
+    @apply h-px w-full;
+    background: var(--line);
+  }
+
+  /* ---- Outline pill button ---- */
+  .btn {
+    @apply relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-full
+      px-7 py-3.5 font-sans text-[12px] font-semibold uppercase tracking-widest
+      transition-colors duration-500 ease-atelier
+      focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-rose-300
+      disabled:pointer-events-none disabled:opacity-50;
+    /* Isolate so the fill pseudo can sit behind text without wrapping each child. */
+    isolation: isolate;
+  }
+  .btn-primary {
+    @apply btn border border-bone/15 text-bone;
+  }
+  /* fill-from-bottom hover */
+  .btn-primary::after {
+    content: '';
+    @apply absolute inset-0 translate-y-full bg-rose-300 transition-transform duration-500 ease-expo;
+    z-index: -1;
+  }
+  .btn-primary:hover::after {
+    @apply translate-y-0;
+  }
+  .btn-primary:hover {
+    @apply text-ink-950;
+  }
+  .btn-ghost {
+    @apply btn border border-bone/15 text-bone/80 hover:border-rose-300 hover:text-bone;
+  }
+
+  /* ---- Animated underline link ---- */
+  .link-underline {
+    @apply relative;
+  }
+  .link-underline::after {
+    content: '';
+    @apply absolute -bottom-1 left-0 h-px w-full origin-left scale-x-0 bg-current transition-transform duration-500 ease-atelier;
+  }
+  .link-underline:hover::after,
+  .link-underline[data-active='true']::after {
+    @apply scale-x-100;
+  }
+  html[dir='rtl'] .link-underline::after {
+    @apply origin-right;
+  }
+
+  /* ---- Section rhythm ---- */
+  .section {
+    @apply mx-auto w-full max-w-[88rem] px-6 py-24 sm:px-10 sm:py-32;
+  }
+}
+
+@layer utilities {
+  .text-accent {
+    color: var(--accent);
+  }
+  /* Outlined (stroke-only) display type for kinetic headings */
+  .text-outline {
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(243, 239, 232, 0.45);
+  }
+  /* Clip mask used to reveal words/lines from below.
+     NOTE: no `display` here — callers add `inline-block` (per-word reveal)
+     or `block` (per-line reveal). Forcing block here put every word on its
+     own line. */
+  .clip-line {
+    overflow: hidden;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
+
+/* ---- Unlayered overrides (win over Tailwind utility layers) ----
+   Persian script is cursive: large letter-spacing visually disconnects
+   the letters. Zero it out for RTL on tracked labels so Persian stays
+   joined and legible, while Latin keeps its editorial tracking. */
+html[dir='rtl'] .kicker,
+html[dir='rtl'] .eyebrow-label {
+  letter-spacing: 0;
+}

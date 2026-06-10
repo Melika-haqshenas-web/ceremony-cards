@@ -1,0 +1,313 @@
+{
+  "meta": {
+    "siteName": "Meli",
+    "home": {
+      "title": "Meli — Enchanting Digital Cards for Every Ceremony",
+      "description": "Design and send breathtaking digital invitations for weddings, birthdays, parties and more. Floral, animated, and unforgettable."
+    },
+    "cards": {
+      "title": "Browse Cards — Meli",
+      "description": "Explore beautifully animated digital card templates for weddings, birthdays, funerals and parties."
+    },
+    "about": {
+      "title": "Our Story — Meli",
+      "description": "Meli crafts pastel, floral digital cards that make every moment feel like a fairytale."
+    },
+    "contact": {
+      "title": "Contact — Meli",
+      "description": "Questions, custom designs or partnerships — let's talk."
+    },
+    "checkout": {
+      "title": "Checkout — Meli",
+      "description": "Complete your order and send beautiful digital cards in minutes."
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "cards": "Cards",
+    "about": "Story",
+    "contact": "Contact",
+    "cart": "Cart",
+    "getStarted": "Get Started",
+    "atelier": "Atelier"
+  },
+  "preloader": {
+    "tagline": "Blooming something beautiful…"
+  },
+  "common": {
+    "currency": "$",
+    "from": "from",
+    "preview": "Preview",
+    "select": "Select",
+    "selected": "Selected",
+    "addToCart": "Add to cart",
+    "buyNow": "Buy now",
+    "viewDetails": "View details",
+    "viewAll": "View all cards",
+    "close": "Close",
+    "backToCards": "Back to cards",
+    "loading": "Loading…"
+  },
+  "home": {
+    "hero": {
+      "kicker": "Maison of digital invitations",
+      "badge": "Spring Collection 2026",
+      "titleLine1": "Every ceremony",
+      "titleLine2": "deserves an",
+      "titleLine3": "overture",
+      "title": "Cards that bloom",
+      "titleAccent": "for every celebration",
+      "subtitle": "Weddings, birthdays, farewells and parties — crafted as living, animated invitations your guests will never forget.",
+      "ctaPrimary": "Explore the collection",
+      "ctaSecondary": "How it works",
+      "scroll": "Scroll to discover",
+      "index": "Est. 2026 — Tehran"
+    },
+    "intro": {
+      "caption": "The philosophy",
+      "statement": "A Meli card is not merely a card. It is the first breath of your celebration — a living overture your guests open, feel, and never forget.",
+      "cta": "Read our story"
+    },
+    "marquee": [
+      "Weddings",
+      "Birthdays",
+      "Memorials",
+      "Parties",
+      "Baby showers",
+      "Graduations"
+    ],
+    "collection": {
+      "caption": "The ceremonies",
+      "title": "Choose the occasion",
+      "hint": "Hover to preview"
+    },
+    "gallery": {
+      "caption": "Selected designs",
+      "title": "An atelier of animated cards",
+      "drag": "Scroll to explore"
+    },
+    "stats": {
+      "cards": "Unique templates",
+      "ceremonies": "Ceremony types",
+      "delivered": "Cards delivered",
+      "rating": "Average rating"
+    },
+    "categories": {
+      "title": "A card for every moment",
+      "subtitle": "Pick the occasion — we'll handle the magic."
+    },
+    "how": {
+      "title": "Three steps to perfect",
+      "subtitle": "From the first idea to the moment it's opened — all in a few quiet minutes.",
+      "steps": [
+        {
+          "title": "Choose your ceremony",
+          "description": "Select the occasion and a template that matches your story."
+        },
+        {
+          "title": "Make it yours",
+          "description": "Personalise names, dates and colours with a live preview."
+        },
+        {
+          "title": "Share the joy",
+          "description": "Send a link or QR code — your guests open an animated card."
+        }
+      ]
+    },
+    "featured": {
+      "title": "Most loved designs",
+      "subtitle": "Hand-picked templates our community adores."
+    },
+    "testimonials": {
+      "title": "Loved by celebrants everywhere",
+      "items": [
+        {
+          "quote": "Our wedding invite made everyone gasp. The animation felt like petals falling on screen.",
+          "author": "Niloofar & Sam",
+          "role": "Wedding, Shiraz"
+        },
+        {
+          "quote": "I sent birthday cards to 40 friends in five minutes. Every single one replied with a heart.",
+          "author": "Daria K.",
+          "role": "Birthday"
+        },
+        {
+          "quote": "Elegant, calm and respectful — exactly what we needed for a difficult day.",
+          "author": "The Ahmadi Family",
+          "role": "Memorial"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to make a moment unforgettable?",
+      "subtitle": "Start with a template — customise everything later.",
+      "button": "Start designing"
+    }
+  },
+  "cards": {
+    "header": {
+      "badge": "The collection",
+      "title": "Find your perfect card",
+      "subtitle": "Filter by ceremony and preview every animation before you choose."
+    },
+    "filters": {
+      "all": "All cards",
+      "searchPlaceholder": "Search templates…",
+      "empty": "No templates match your search yet."
+    }
+  },
+  "template": {
+    "includesTitle": "Every card includes",
+    "includes": [
+      "Fully animated, mobile-first design",
+      "Personalised names, dates & message",
+      "Shareable link + QR code",
+      "RSVP & guest responses",
+      "Lifetime access to your card"
+    ],
+    "customizeNote": "You can personalise every detail after purchase.",
+    "livePreview": "Live preview",
+    "relatedTitle": "You might also love"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "emptyTitle": "Your cart is empty",
+    "emptySubtitle": "Browse the collection and add a card to get started.",
+    "browse": "Browse cards",
+    "summary": "Order summary",
+    "subtotal": "Subtotal",
+    "tax": "Tax",
+    "total": "Total",
+    "remove": "Remove",
+    "details": "Your details",
+    "fullName": "Full name",
+    "email": "Email address",
+    "pay": "Pay & send",
+    "successTitle": "Hooray! Your order is confirmed.",
+    "successSubtitle": "Check your inbox — your beautiful cards are on the way.",
+    "continue": "Back to home"
+  },
+  "about": {
+    "badge": "Our story",
+    "title": "We turn moments into memories that move",
+    "lead": "Meli began with a simple belief: an invitation should feel as special as the day it celebrates.",
+    "body": [
+      "Founded in a little studio full of spring flowers, we set out to replace flat, forgettable invites with cards that breathe — petals that drift, lines that draw themselves, colours soft as morning light.",
+      "Today, thousands of families across the world use Meli to mark their weddings, welcome new babies, celebrate another year, and honour those they've lost — each with the grace the moment deserves."
+    ],
+    "valuesTitle": "What we hold dear",
+    "values": [
+      {
+        "title": "Crafted with care",
+        "description": "Every template is designed by hand and animated frame by frame."
+      },
+      {
+        "title": "Beautifully accessible",
+        "description": "Fast, responsive and readable in English and Persian, right-to-left included."
+      },
+      {
+        "title": "Made for memories",
+        "description": "Your cards live forever — revisit them long after the day has passed."
+      }
+    ]
+  },
+  "contact": {
+    "badge": "Say hello",
+    "title": "Let's create something lovely",
+    "subtitle": "Custom designs, questions or partnerships — we'd love to hear from you.",
+    "name": "Your name",
+    "email": "Your email",
+    "message": "Your message",
+    "send": "Send message",
+    "sent": "Thank you! We'll be in touch very soon.",
+    "infoTitle": "Other ways to reach us",
+    "email_label": "Email",
+    "phone_label": "Phone",
+    "studio_label": "Studio"
+  },
+  "footer": {
+    "tagline": "Digital cards that bloom for every ceremony.",
+    "explore": "Explore",
+    "company": "Company",
+    "newsletterTitle": "Spring into your inbox",
+    "newsletterSubtitle": "New templates and seasonal offers, occasionally.",
+    "newsletterPlaceholder": "Your email",
+    "subscribe": "Subscribe",
+    "rights": "All rights reserved.",
+    "madeWith": "Made with love & petals."
+  },
+  "categories": {
+    "wedding": {
+      "name": "Weddings",
+      "description": "Romantic, floral invites for the big day."
+    },
+    "birthday": {
+      "name": "Birthdays",
+      "description": "Playful, joyful cards for another year."
+    },
+    "funeral": {
+      "name": "Memorials",
+      "description": "Calm, respectful cards to honour a life."
+    },
+    "party": {
+      "name": "Parties",
+      "description": "Bold, vibrant invites that set the mood."
+    },
+    "baby": {
+      "name": "Baby showers",
+      "description": "Tender, sweet cards to welcome new life."
+    },
+    "graduation": {
+      "name": "Graduations",
+      "description": "Proud, celebratory cards for a milestone."
+    }
+  },
+  "templates": {
+    "rosewood": {
+      "name": "Rosewood Vows",
+      "tagline": "Hand-drawn roses and gilded lines."
+    },
+    "blossom-veil": {
+      "name": "Blossom Veil",
+      "tagline": "Drifting petals over soft ivory."
+    },
+    "confetti-pop": {
+      "name": "Confetti Pop",
+      "tagline": "Bouncy balloons and a burst of joy."
+    },
+    "golden-hour": {
+      "name": "Golden Hour",
+      "tagline": "Warm, glowing birthday elegance."
+    },
+    "serene-lily": {
+      "name": "Serene Lily",
+      "tagline": "Quiet lilies for a gentle farewell."
+    },
+    "eternal-peace": {
+      "name": "Eternal Peace",
+      "tagline": "Soft candlelight and still water."
+    },
+    "neon-bloom": {
+      "name": "Neon Bloom",
+      "tagline": "Electric florals for the dance floor."
+    },
+    "garden-soiree": {
+      "name": "Garden Soirée",
+      "tagline": "String lights and climbing ivy."
+    },
+    "little-petal": {
+      "name": "Little Petal",
+      "tagline": "Pastel clouds for a tiny arrival."
+    },
+    "laurel": {
+      "name": "Laurel & Light",
+      "tagline": "Golden laurels for a proud day."
+    }
+  },
+  "atelier": {
+    "badge": "The Living Collection",
+    "title": "Atelier Vivant",
+    "subtitle": "Our collection of animated invitations — each opens like a wax-sealed envelope and unfolds as you scroll. Tap any card to live the experience.",
+    "cta": "Open live"
+  }
+}
